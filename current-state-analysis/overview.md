@@ -23,4 +23,4 @@ In order to chart the most efficient path forward, a solid understanding of the 
     - Fault Response
     - Service Levels
 
-This knowledge will inform the 
+This knowledge will inform the approach to realizing the desired future state.
