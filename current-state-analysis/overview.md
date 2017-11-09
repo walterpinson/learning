@@ -15,5 +15,12 @@ In order to chart the most efficient path forward, a solid understanding of the 
     - Physical Architecture
     - Logical Architecture
     - Subsystems
+    - Scalability Story
+    - Instrumentation Story
+- Operations Audit
+    - Performance
+    - Monitoring
+    - Fault Response
+    - Service Levels
 
-    
+This knowledge will inform the 
