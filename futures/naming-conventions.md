@@ -15,7 +15,7 @@ GitHub repository names will have the following format:
 
 ##### Service Type
 | Service Type | Description
-| :---: | :---
+| :--- | :---
 | api | REST, SOAP, or other RPC based service
 | svc | Service running in the background
 | www | Web-based presentation services****
