@@ -6,7 +6,7 @@
 Microservices Architecture
 
 ## Model-First Philosophy
-Databases are insignificant things
+Databases are insignificant little things
 
 ## Onions Are Good For You
 Onion Architecture
