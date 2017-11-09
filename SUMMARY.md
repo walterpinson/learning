@@ -9,6 +9,6 @@
 ## Futures
 
 * Overview
-* Architecture & Design Philosophy
+* [Architecture & Design Philosophy](futures/architecture-and-design-philosophy.md)
 * [Naming Conventions](futures/naming-conventions.md)
 

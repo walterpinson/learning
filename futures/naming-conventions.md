@@ -6,7 +6,14 @@
 
 GitHub repository names will have the following format:
 
-> lms-<service-type>-<service-name>
+> lms-{servicetype}-{servicename}
 
-> Hi there
+```
+lms-<servicetype>-<servicename>
+lms-<servicetype>-<boundedcontextname>-<servicename>
+
+
+
+
+```
 
