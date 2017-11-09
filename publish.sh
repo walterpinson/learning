@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # build the static site
 gitbook build
 
