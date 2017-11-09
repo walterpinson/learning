@@ -8,7 +8,9 @@
 GitHub repository names will have the following format:
 
 > lms-{servicetype}-{servicename}
+
 > lms-{servicetype}-{subsystemname}-{servicename}
+
 > lms-{servicetype}-{boundedcontextname}-{servicename}
 
 ##### Service Type
