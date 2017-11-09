@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# make the book the current working directory
+
+pushd lms-docs
 # build the static site
 gitbook build
 
@@ -26,3 +29,6 @@ git push origin gh-pages
 
 # checkout to the master branch
 git checkout master
+
+# go back to the starting directory
+popd
