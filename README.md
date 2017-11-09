@@ -9,3 +9,10 @@ LMS is the Peoplefluent's Learning Management offering.  It is provided as a sta
 LMS was originally created by Strategia in Montreal, Canada.  It has, since, been acquired by Peoplefluent, headquartered in Waltham, MA.
 
 ## Related Repositories
+
+| Repository Name | Description
+| :--- | :---
+| [lms-docs][1] | Documentation repository for the LMS product development effort
+
+
+[1]: https://github.com/PeopleFluent/lms-docs "LMS Developer Documentation"
