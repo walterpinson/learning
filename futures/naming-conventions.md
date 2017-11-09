@@ -5,12 +5,15 @@
 ### Repository Names
 
 #### Format
-GitHub repository names will have the following format:
+GitHub repository names will conform to one of the following formats:
 
+##### Basic
 > lms-{servicetype}-{servicename}
 
+##### Subsystem
 > lms-{servicetype}-{subsystemname}-{servicename}
 
+##### Bounded Context (DDD)
 > lms-{servicetype}-{boundedcontextname}-{servicename}
 
 ##### Service Type
