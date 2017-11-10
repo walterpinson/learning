@@ -5,6 +5,8 @@
 ## Current State Analysis
 
 * [Overview](current-state-analysis/overview.md)
+* Platforms & Languages
+* [Distinct Applications List](current-state-analysis/distinct-applications-list.md)
 
 ## Futures
 
