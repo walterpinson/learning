@@ -13,4 +13,4 @@
 * [Overview](futures/overview.md)
 * [Naming Conventions](futures/naming-conventions.md)
 * [Architecture & Design Philosophy](futures/architecture-and-design-philosophy.md)
-
+* [Logical Architecture](futures/logical-architecture.md)
