@@ -1,0 +1,416 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Logical Architecture · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="architecture-and-design-philosophy.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Current State Analysis</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../current-state-analysis/overview.html">
+            
+                <a href="../current-state-analysis/overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <span>
+            
+                    
+                    Platforms & Languages
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../current-state-analysis/distinct-applications-list.html">
+            
+                <a href="../current-state-analysis/distinct-applications-list.html">
+            
+                    
+                    Distinct Applications List
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Futures</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="overview.html">
+            
+                <a href="overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="naming-conventions.html">
+            
+                <a href="naming-conventions.html">
+            
+                    
+                    Naming Conventions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="architecture-and-design-philosophy.html">
+            
+                <a href="architecture-and-design-philosophy.html">
+            
+                    
+                    Architecture & Design Philosophy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.4" data-path="logical-architecture.html">
+            
+                <a href="logical-architecture.html">
+            
+                    
+                    Logical Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Logical Architecture</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="lms-logical-architecture">LMS Logical Architecture</h1>
+<h2 id="overview">Overview</h2>
+<p>It&apos;s very important to understand just what it is that is being built.  Prior to the production of requirements and user stories, this understanding is demonstrated through the ability to diagram the system.</p>
+<h2 id="subsystem-architecture">Subsystem Architecture</h2>
+<p>LMS is a complex system that is composed of multiple subsystems, each with a specific set of responsibilities.  The current understanding of the LMS subystems and the relationships between them is depicted below.</p>
+<p><img src="../gitbook/images/lms.architecture.2018.logical-1.png" alt="Logical Architecture"></p>
+<p>A quick glance at the diagram above should convey that there are 6 feature subsystems, represented by vertical blocks.</p>
+<ol>
+<li>Learning Management Subsystem</li>
+<li>Content Management Subsystem</li>
+<li>Compliance Management Subsystem</li>
+<li>Reporting Subsystem</li>
+<li>eCommerce Subsystem</li>
+<li>Social Learning Subsystem</li>
+</ol>
+<p>The feature subsystems interact with the Portal subsystem and a Support subsystem, represented by horizontal bloks.</p>
+<p><img src="../gitbook/images/lms.architecture.2018.logical-2.png" alt="Logical Architecture"></p>
+<p>It is possible to drill down into each of these subsystems for more detail.  Subsystems are composed of modules and services.  And those can be further decomposed.</p>
+<h3 id="portal-subsystem">Portal Subsystem</h3>
+<p>The Portal Subystem is responsible for presentation.  It is composed of modules that interact with the feature subsystems.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Module Name</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Learning Management Module</td>
+<td style="text-align:left">Surface feature functionality from the Learning Management Subsystem</td>
+</tr>
+<tr>
+<td style="text-align:left">Content Management Module</td>
+<td style="text-align:left">Surface feature functionality from the Content Management Subsystem</td>
+</tr>
+<tr>
+<td style="text-align:left">Skills Management Module</td>
+<td style="text-align:left">Surface feature functionality from the Compliance Management Subsystem</td>
+</tr>
+<tr>
+<td style="text-align:left">Reporting Module</td>
+<td style="text-align:left">Surface feature functionality from the Reporting Subsystem</td>
+</tr>
+<tr>
+<td style="text-align:left">eCommerce Module</td>
+<td style="text-align:left">Surface feature functionality from the eCommerce Subsystem</td>
+</tr>
+<tr>
+<td style="text-align:left">Social Learning Module</td>
+<td style="text-align:left">Surface feature functionality from the Social Learning Subsystem</td>
+</tr>
+</tbody>
+</table>
+<h3 id="learning-management-subsystem">Learning Management Subsystem</h3>
+<h3 id="content-management-subsystem">Content Management Subsystem</h3>
+<h3 id="compliance-management-subsystem">Compliance Management Subsystem</h3>
+<h3 id="reporting-subsystem">Reporting Subsystem</h3>
+<h4 id="data-extraction-service">Data Extraction Service</h4>
+<h4 id="cube-builder-service">Cube Builder Service</h4>
+<h4 id="report-service">Report Service</h4>
+<h3 id="ecommerce-subsystem">eCommerce Subsystem</h3>
+<h4 id="catalog-service">Catalog Service</h4>
+<h4 id="shopping-cart-service">Shopping Cart Service</h4>
+<h4 id="payment-service">Payment Service</h4>
+<h3 id="social-learning-subsystem">Social Learning Subsystem</h3>
+<h3 id="support-subsystem">Support Subsystem</h3>
+<h4 id="identity-service">Identity Service</h4>
+<p><img src="../gitbook/images/lms.architecture.2018.identity.png" alt="Identity Service"></p>
+<h5 id="users">/users</h5>
+<h5 id="permissions">/permissions??</h5>
+<h5 id="authorizations">/authorizations??</h5>
+<h4 id="demographics-services">Demographics Services</h4>
+<p><img src="../gitbook/images/lms.architecture.2018.demographics.png" alt="Demographics Service"></p>
+<h4 id="logging-service">Logging Service</h4>
+<h4 id="notification-service">Notification Service</h4>
+<p><img src="../gitbook/images/lms.architecture.2018.notification.png" alt="Notifications Service"></p>
+<h5 id="templates">/templates</h5>
+<h5 id="emails">/emails</h5>
+<h5 id="sections-">/sections ???</h5>
+<h5 id="events-">/events ???</h5>
+<h4 id="data-transfer-service">Data Transfer Service</h4>
+<h4 id="configuration-service">Configuration Service</h4>
+<p><img src="../gitbook/images/lms.architecture.2018.configuration.png" alt="Configuration Service"></p>
+<h5 id="customers">/customers</h5>
+<h5 id="entities">/entities</h5>
+<h5 id="lookuptables">/lookuptables</h5>
+<h5 id="configurations">/configurations</h5>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="architecture-and-design-philosophy.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Architecture & Design Philosophy">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Logical Architecture","level":"3.4","depth":1,"previous":{"title":"Architecture & Design Philosophy","level":"3.3","depth":1,"path":"futures/architecture-and-design-philosophy.md","ref":"futures/architecture-and-design-philosophy.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"futures/logical-architecture.md","mtime":"2017-11-16T06:00:28.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-19T12:55:22.625Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
